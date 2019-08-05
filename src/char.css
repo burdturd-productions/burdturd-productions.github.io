@@ -7,6 +7,37 @@ img.character {
     padding: 1%;
 
 }
+img.chatbubble{
+    position: fixed;
+    align-content: center;
+    left: 10%;
+    scale: 200%;
+
+
+
+}
+div.charactertext {
+    max-width: 20%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1em;
+    margin-left: 25%;
+    position: relative;
+}
+div.storytext {
+    max-width: 20%;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 1em;
+    margin-left: 25%;
+    position: relative;
+}
+button {
+    align-content: center;
+    max-width: fit-content;
+    bottom: 
+    
+}
 html {
     background-image: url(/assets/birdbackgroundbw.jpg);
     position: center;
