@@ -1,0 +1,18 @@
+img.character {
+    height: auto;
+    max-width: 20%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1%;
+
+}
+html {
+    background-image: url(/assets/birdbackgroundbw.jpg);
+    position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body {
+    color: whitesmoke;
+}
