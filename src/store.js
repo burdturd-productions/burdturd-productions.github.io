@@ -12,20 +12,10 @@ const store = {
     },
     getAllUsers() {
         let scores = store.get('scores');
-        if(!scores){
-            store.save(scores, allUsers);
-        }
-        return allUsers;
+        return scores;
     },
-    
+    getUser(users, username) {
+        
+    }
 };
 export default store;
-// let findUser = {
-//     for(let i = 0; i < allUsers.length; i++) {
-//         const foundUser = allUsers[i];
-//         if(foundUser.code === code) {
-//             return foundUser;
-//         }
-//         return null;
-//     }
-// };
