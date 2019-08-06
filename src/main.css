@@ -1,8 +1,21 @@
+main {
+    font-family: 'Ubuntu', sans-serif;
+    font-kerning: 2px;
+    line-height: 1.25rem;
+}
+
+h1 {
+    font-family: 'Seymour One', sans-serif;
+}
 
 .logo-container {
     display: flex;
     justify-content: center;
     margin-top: 35px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .logo {
@@ -16,7 +29,8 @@
 }
 
 .logo-button:hover {    
-    box-shadow: 6px 6px 6px #888;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(3px 3px 3px #222);
 }
 
 .footer {

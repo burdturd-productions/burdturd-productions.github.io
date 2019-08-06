@@ -1,0 +1,22 @@
+body {
+    background-image: url(../../assets/quiz-background.jpg);
+    background-size: 100% auto;
+}
+
+.container {
+    display: flex;
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.thoughts {
+    height: auto;
+    width: 70%;
+}
+
+.char-img {
+    height: auto;
+}
