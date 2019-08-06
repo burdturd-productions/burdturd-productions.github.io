@@ -12,9 +12,6 @@ img.chatbubble{
     align-content: center;
     left: 10%;
     scale: 200%;
-
-
-
 }
 div.charactertext {
     max-width: 20%;
@@ -35,15 +32,15 @@ div.storytext {
 button {
     align-content: center;
     max-width: fit-content;
-    bottom: 
     
 }
 html {
-    background-image: url(/assets/birdbackgroundbw.jpg);
+    background: black;
     position: center;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 body {
     color: whitesmoke;
+    background-image: 
 }
