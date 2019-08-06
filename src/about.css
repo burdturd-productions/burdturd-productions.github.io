@@ -1,0 +1,32 @@
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(270 240 120);
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.us {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin: 1.5rem;
+}
+.icon {
+    width: 100%;
+    margin-left: 35px;
+}
+
+.credits {
+    padding: 50px;
+    text-align: center;
+}
