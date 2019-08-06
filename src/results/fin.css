@@ -1,5 +1,26 @@
+body {
+    display: grid;
+    grid-column: 33%, 66%;
+    grid-row: 33%, 33%, 33%;
+
+}
 footer {
     position: fixed;
     bottom: 0;
     align-content: center;
+    max-width: 33%;
+    min-width: 250px;
+    margin-left: 30%;
+    scale: auto;
+    height: auto;
+    grid-column-start:2;
+}
+div.side-art {
+    float: left;
+    height: 100%;
+    background: black;
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end: 4;
 }
