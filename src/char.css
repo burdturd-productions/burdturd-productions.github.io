@@ -1,0 +1,49 @@
+img.character {
+    height: auto;
+    max-width: 20%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1%;
+
+}
+img.chatbubble{
+    position: fixed;
+    align-content: center;
+    left: 10%;
+    scale: 200%;
+
+
+
+}
+div.charactertext {
+    max-width: 20%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1em;
+    margin-left: 25%;
+    position: relative;
+}
+div.storytext {
+    max-width: 20%;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 1em;
+    margin-left: 25%;
+    position: relative;
+}
+button {
+    align-content: center;
+    max-width: fit-content;
+    bottom: 
+    
+}
+html {
+    background-image: url(/assets/birdbackgroundbw.jpg);
+    position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body {
+    color: whitesmoke;
+}
