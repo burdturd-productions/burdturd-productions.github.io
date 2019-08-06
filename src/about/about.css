@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgba(270 240 120);
+    background-image: url(../../assets/egg-background.png);
 }
 
 .icons-container {
