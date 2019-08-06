@@ -38,7 +38,7 @@ button {
 }
 
 html {
-    background-image: url(/assets/birdbackgroundbw.jpg);
+    background: black;
     position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -46,4 +46,5 @@ html {
 
 body {
     color: whitesmoke;
+    background-image: 'assets/birdbackgroundbw.jpg';
 }
