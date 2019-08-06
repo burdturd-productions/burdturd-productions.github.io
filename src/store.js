@@ -1,3 +1,4 @@
+import findUser from './findUser.js';
 
 const store = {
     storage: window.localStorage,
@@ -11,11 +12,18 @@ const store = {
         return item;
     },
     getAllUsers() {
-        let scores = store.get('scores');
-        return scores;
+        let users = store.get('users');
+        if(!users) {
+            users = [];
+        }
+        return users;
     },
-    getUser(users, username) {
-        
+    getUser(username) {
+        const users = store.getAllUsers();
+        const user = findUser(users, username);
+        return user;
     }
 };
 export default store;
+
+// Next write scores to store.
