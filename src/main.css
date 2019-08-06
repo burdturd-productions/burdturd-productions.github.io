@@ -1,7 +1,3 @@
-* {
-    cursor: url('assets/logo.png'), default;
-}
-
 .logo-container {
     display: flex;
     justify-content: center;
