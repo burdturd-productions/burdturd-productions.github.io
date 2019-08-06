@@ -1,4 +1,27 @@
 img {
     height: 200px;
     width: 200px;
+    margin-right: 10px;
+    float: left;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+p {
+    align-self: center;
+    margin-top: 0;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 5px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
