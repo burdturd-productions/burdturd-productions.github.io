@@ -5,6 +5,31 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+form {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.pic-1 {
+    width: 20%;
+    z-index: -1;
+}
+
+.pic-2 {
+    width: 20%;
+    z-index: -1;
+}
+
+.pic-3 {
+    width: 20%;
+    z-index: -1;
 }
 
 button {
