@@ -8,6 +8,13 @@ img.character {
     z-index: -1;
 }
 
+#background {
+    /* background-image: url(../../) */
+    background-color: white;
+    height: auto;
+    max-width: 80%;
+}
+
 img.chatbubble{
     position: fixed;
     align-content: center;
@@ -21,6 +28,7 @@ div.charactertext {
     margin-top: 5%;
     font-size: 1em;
     margin-left: 25%;
+    margin-top: 150px;
     position: relative;
 }
 

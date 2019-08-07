@@ -1,7 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Ubuntu', sans-serif;
     font-kerning: 2px;
     line-height: 1.25rem;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    margin-left: -8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;    
+    font-family: 'Seymour One', sans-serif;
+    filter: drop-shadow(3px 10px 10px grey);
+}
+
+.nav-bar {
+    height: 65px;
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.logo-rev {
+    height: 60px;
+    float: left;
 }
 
 h1 {
