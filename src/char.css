@@ -5,6 +5,7 @@ img.character {
     bottom: 0;
     left: 0;
     padding: 1%;
+    z-index: -1;
 }
 
 img.chatbubble{

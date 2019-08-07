@@ -10,10 +10,12 @@ const store = {
         const json = store.storage.getItem(key);
         const item = JSON.parse(json);
         return item;
+        
     },
     getAllUsers() {
-        let users = store.get('users');
+        let users = store.get('all-users');
         if(!users) {
+            console.log(users);
             users = [];
         }
         return users;
