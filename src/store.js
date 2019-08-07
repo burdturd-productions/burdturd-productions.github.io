@@ -25,6 +25,7 @@ const store = {
         const user = findUser(users, username);
         return user;
     },
+    //write scores to store.
     updateScore(username, score) {
         const user = store.getUser(username);
         user.score += score;
@@ -34,4 +35,3 @@ const store = {
 };
 export default store;
 
-// Next write scores to store.
