@@ -1,14 +1,11 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
+body {
     font-family: 'Ubuntu', sans-serif;
     font-kerning: 2px;
     line-height: 1.25rem;
 }
 
 .nav-container {
+    font-family: 'Seymour One', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +15,6 @@ html {
     top: 0;
     width: 100%;
     padding: 10px;    
-    font-family: 'Seymour One', sans-serif;
     filter: drop-shadow(3px 10px 10px grey);
 }
 

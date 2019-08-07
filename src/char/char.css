@@ -1,25 +1,17 @@
-img.character {
-    height: auto;
-    max-width: 20%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 1%;
-    z-index: -1;
+html {
+    background-image: url(../../assets/case-bkgd.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #background {
-    /* background-image: url(../../) */
-    background-color: white;
-    height: auto;
-    max-width: 80%;
-}
-
-img.chatbubble{
+    background-image: url(../../assets/bio-folder.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: fixed;
-    align-content: center;
-    left: 10%;
-    scale: 200%;
+    bottom: 0;
+    height: 1000px;
+    width: 100%;
 }
 
 div.charactertext {
@@ -44,15 +36,4 @@ div.storytext {
 button {
     align-content: center;
     max-width: fit-content;    
-}
-
-html {
-    background-image: url(../../assets/case-bkgd.png);
-    position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-body {
-    background-image: 'assets/birdbackgroundbw.jpg';
 }
