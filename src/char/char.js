@@ -11,7 +11,6 @@ nameForm.addEventListener('submit', ()=>{
     };
     const allUsers = store.getAllUsers();
     const currentUser = formData.get('input-name');
-    console.log(allUsers);
     allUsers.push(newUser);
     
     store.save('all-users', allUsers);

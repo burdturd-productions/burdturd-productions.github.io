@@ -14,7 +14,6 @@ const store = {
     getAllUsers() {
         let users = store.get('all-users');
         if(!users) {
-            console.log(users);
             users = [];
         }
         return users;
