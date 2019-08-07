@@ -1,4 +1,4 @@
-main {
+html {
     font-family: 'Ubuntu', sans-serif;
     font-kerning: 2px;
     line-height: 1.25rem;
@@ -8,10 +8,22 @@ h1 {
     font-family: 'Seymour One', sans-serif;
 }
 
+.splash-bkgd {
+    background-color: salmon;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;
     margin-top: 35px;
+}
+
+.feet {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: 35%;
 }
 
 button:hover {
@@ -20,7 +32,7 @@ button:hover {
 
 .logo {
     height: auto;
-    width: 60%;
+    width: 70%;
 }
 
 .logo-button {
@@ -29,12 +41,12 @@ button:hover {
 }
 
 .logo-button:hover {    
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(3px 3px 3px #222);
+    -webkit-filter: drop-shadow(3px 3px 4px #7d2f29);
+    filter: drop-shadow(3px 3px 4px #7d2f29);
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 60px;
 }
