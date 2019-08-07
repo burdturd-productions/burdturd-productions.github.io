@@ -20,4 +20,3 @@ else {
     storyImg.src = '../../assets/placeholder-pigeon.jpg';
     textResult.textContent = 'You Lose!';
 }
-
