@@ -16,8 +16,8 @@ if(userScore > 0) {
     textResult.textContent = 'You Win!';
 }
 else {
-    sideImg.src = '../assets/character-right.png';
-    storyImg.src = '../assets/placeholder-pigeon.jpg';
+    sideImg.src = '../../assets/character-right.png';
+    storyImg.src = '../../assets/placeholder-pigeon.jpg';
     textResult.textContent = 'You Lose!';
 }
 
