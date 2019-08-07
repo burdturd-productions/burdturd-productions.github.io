@@ -24,7 +24,13 @@ const store = {
         const users = store.getAllUsers();
         const user = findUser(users, username);
         return user;
+    },
+    updateScore(username, score) {
+        const user = store.getUser(username);
+        user.score += score;
+        return user;
     }
+
 };
 export default store;
 

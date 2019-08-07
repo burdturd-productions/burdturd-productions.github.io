@@ -23,9 +23,30 @@ test('save a user object to store', assert => {
 
 });
 test('retrieves a user object from store.', assert => {
-    store.save('users', testUsers);
-    const users = store.get('users');
-    const user = store.getUser(users[1].name);
-    console.log(user);
-    assert.deepEqual(user, testUsers[1]);
+    const key = 'all-users';
+    const user1 = {
+        name: 'fakename',
+        score: 0,
+    };
+    store.save(key, [user1]);
+
+    const user = store.getUser('fakename');
+    assert.deepEqual(user, user1);
+    
+});
+test('updates userObject score', assert => {
+    const key = 'all-users';
+    const user1 = {
+        name: 'fakename',
+        score: 0,
+    };
+    store.save(key, [user1]);
+    const score = 1;
+    const expected = {
+        name: 'fakename',
+        score: 1
+    };
+    const result = store.updateScore(user1.name, score);
+    assert.deepEqual(result, expected);
+
 });
