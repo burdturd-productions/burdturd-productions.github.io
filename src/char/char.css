@@ -39,13 +39,12 @@ button {
 }
 
 html {
-    background: black;
+    background-image: url(../../assets/case-bkgd.png);
     position: center;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 body {
-    color: whitesmoke;
     background-image: 'assets/birdbackgroundbw.jpg';
 }

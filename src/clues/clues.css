@@ -1,3 +1,8 @@
+body {
+    background-image: url(../../assets/clues-bkgd.png);
+    background-size: 100% auto;
+}
+
 img {
     height: 200px;
     width: 200px;
