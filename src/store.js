@@ -9,8 +9,7 @@ const store = {
     get(key) {
         const json = store.storage.getItem(key);
         const item = JSON.parse(json);
-        return item;
-        
+        return item;    
     },
     getAllUsers() {
         let users = store.get('all-users');
@@ -30,8 +29,11 @@ const store = {
         const user = store.getUser(username);
         user.score += score;
         return user;
-    }
-
+    },
+    getCurrentUser() {
+        let currentUser = store.get('current-user');
+        return currentUser;
+    },
 };
 export default store;
 

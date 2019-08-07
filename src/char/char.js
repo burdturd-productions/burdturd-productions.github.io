@@ -10,9 +10,11 @@ nameForm.addEventListener('submit', ()=>{
         score: 0,
     };
     const allUsers = store.getAllUsers();
+    const currentUser = formData.get('input-name');
     console.log(allUsers);
     allUsers.push(newUser);
     
     store.save('all-users', allUsers);
+    store.save('current-user', currentUser);
     window.location = 'clues.html';
 });
