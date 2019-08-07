@@ -1,37 +1,23 @@
-const sideImg = document.getElementById('side-id');
-const storyImg = document.getElementById('story-id');
-const textResult = document.getElementById('text-id');
+import store from '../store.js';
 
-let userScore = 1;
+let sideImg = document.getElementById('side-image');
+let storyImg = document.getElementById('story-image');
+let textResult = document.getElementById('text-id');
 
-const results = [
-    {
-        id: 'win',
-        sideArt: 'assets/character-right.png',
-        storyArt: 'assets/wtfbirb.jpeg',
-        storyTxt: 'You Win!',
-    },
-    {
-        id: 'lose',
-        sideArt: 'assets/character-right.png',
-        storyArt: 'storyLose.jpeg',
-        storyTxt: 'You Lose!',
-    }
-];
+let userName = store.getCurrentUser();
+let user = store.getUser(userName);
+let userScore = user.score;
+console.log(userScore);
+
 // Need and if statement that Renders results based on score.
-if(userScore > 1) {
-    sideImg.src = results[0].sideArt;
-    storyImg.src = results[0].storyArt;
-    textResult.textContent = results[0].storyTxt;
+if(userScore > 0) {
+    sideImg.src = '../../assets/character-right.png';
+    storyImg.src = '../../assets/wtfbirb.jpg';
+    textResult.textContent = 'You Win!';
 }
 else {
-    sideImg.src = results[1].sideArt;
-    storyImg.src = results[1].storyArt;
-    textResult.textContent = results[1].storyTxt;
+    sideImg.src = '../assets/character-right.png';
+    storyImg.src = '../assets/placeholder-pigeon.jpg';
+    textResult.textContent = 'You Lose!';
 }
 
-export default results;
-
-
-// Need Assets, IMG's
-// wire to STORE.JS to use live data.
