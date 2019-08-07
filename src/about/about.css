@@ -1,8 +1,3 @@
-.title {
-    font-size: 2rem;
-    text-align: center;
-}
-
 body {
     background-image: url(../../assets/egg-background.png);
 }
@@ -12,7 +7,7 @@ body {
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .us {
@@ -30,5 +25,5 @@ body {
 .credits {
     padding: 50px;
     text-align: center;
-    margin-top: -50px;
+    margin-top: -30px;
 }
