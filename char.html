@@ -11,29 +11,39 @@
     <title>The Case</title>
 </head>
 
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="char.html">Bio</a>
-        <a href="clues.html">Clues</a>
-        <a href="quiz.html">Quiz</a>
-        <a href="fin.html">Results</a>
-        <a href="about.html">About</a>
-    </nav>
-</header>
-
 <body>
-    <div class='charactertext'>The Case!</div>
-    <div class='storytext'>The Eggnappers<p>
-        Eggs have been disapearing, investigate the case!
-    </p>
-</div>
-    <img class='character' src='assets/character-right.png'>
-    <form id="name"><p>What do you want to be called?</p><label for='input-name'>
-        <input name="input-name" type="text">
-    </label>
-        <button>Continue . . . </button>
-    </form>
+    <header class="nav-container">
+        <nav class="nav-bar">
+            <button class="logo-button"> 
+                <a href="index.html"><img class="logo-rev" src="./assets/logo-reverse.png" alt="Pigeon PI Logo Button"></a>   
+            </button>
+            <a class="nav-a" href="char.html">Bio</a>
+            <a class="nav-a" href="clues.html">Clues</a>
+            <a class="nav-a" href="quiz.html">Quiz</a>
+            <a class="nav-a" href="fin.html">Results</a>
+            <a class="nav-a" href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="background">
+            <div class='charactertext'><h1>The Case!</h1></div>
+
+            <div class='storytext'><h2>"Under The Eggfluence"</h2>
+                <p>Eggs have been disapearing, investigate the case!</p>
+            </div>
+
+            <img class='character' src='assets/character-right.png'>
+
+            <form id="name"><p>What do you want to be called?</p>
+                <label for='input-name'>
+                <input name="input-name" type="text">
+                </label>
+                <button>Continue . . . </button>
+            </form>
+        </div>
+    </main>
+
     <script  type="module" src="./src/char/char.js"></script>
 </body>
 </html>
