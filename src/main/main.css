@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html {
+main {
     font-family: 'Ubuntu', sans-serif;
     font-kerning: 2px;
     line-height: 1.25rem;
