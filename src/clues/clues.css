@@ -7,6 +7,7 @@ body {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
 }
 
 .grid-item {
@@ -30,23 +31,17 @@ body {
     padding-right: 200px;
 }
 
-
 .clues {
-    height: 200px;
-    width: 200px;
+    height: 270px;
+    width: 250px;
     margin-right: 10px;
     float: left;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 250px;
+    min-height: 270px;
 }
 
 p {
     align-self: center;
     margin-top: 0;
     text-align: center;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
 }

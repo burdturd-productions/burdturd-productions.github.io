@@ -9,9 +9,13 @@
     <title>Quiz</title>
 </head>
 <body class="quiz-page">
+    <audio autoplay>
+        <source id="quiz_audio" src="assets/audio/Marvelous_Mischief_-_David_Renda-www.fesliyanstudios.com.mp3" type="audio/mp3">
+    </audio>
+
     <header class="nav-container">
         <nav class="nav-bar">
-            <button class="logo-button"> 
+            <button class="logo-home"> 
                 <a href="index.html"><img class="logo-rev" src="./assets/logo-reverse.png" alt="Pigeon PI Logo Button"></a>   
             </button>
             <a class="nav-a" href="char.html">Bio</a>
@@ -27,28 +31,16 @@
             <form id='quiz-form'>
                 <button type="radio" name="choices" id="choice-one">
                     <img class="pic-1" src="assets/bubble-1.png">
-                    <p>
-                        <span id="username"></span>: <br><br>
-                        "Eggcorns? Green Ooze? Maybe Georgie O. Squirrel is onto something?!"
-                    </p>
                 </button>
                 <button type="radio" name="choices" id="choice-two">
                     <img class="pic-2" src="assets/bubble-2.png">
-                    <p>
-                        <span id="username"></span>: <br><br>
-                        "I've gotta get to the bottom of this c..."
-                    </p>
                 </button>
                 <button type="radio" name="choices" id="choice-three">
                     <img class="pic-3" src="assets/bubble-3.png">
-                    <p>
-                        <span id="username"></span>: <br><br>
-                        "Between the hair and the eggshells, I don't need to be a genius to see...this has Possum all over it!"
-                    </p>
                 </button>
             </form>
-            <img class="char-img" src="assets/character-left.png"/>
         </div>
+        <footer><img src="assets/character-left.png"></footer>
     </main>
     <script type="module" src="./src/quiz/quiz.js"></script>
 </body>
