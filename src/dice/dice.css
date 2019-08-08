@@ -1,8 +1,9 @@
 .grid-container {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     max-height: 600px;
+    z-index: 1;
 }
 
 .character {
@@ -55,3 +56,20 @@ div h2 {
 }
 
 /*Below is z-index div*/
+
+#hidden {
+    display: none;
+}
+
+.wrapper {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 500px; 
+    z-index: 2;
+    background: steelblue;
+}
+
+.wrapper-item p {
+    text-align: center;
+}
