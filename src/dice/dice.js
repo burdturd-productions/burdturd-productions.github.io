@@ -25,9 +25,6 @@ diceRoll.addEventListener('click', () => {
     let alienRoll = getDieSide();
     let userRoll = getDieSide();
 
-    // update the display
-        // change dice image
-
     // Compare rolls
     if(userRoll > alienRoll) {
         wins++;
@@ -54,6 +51,15 @@ diceRoll.addEventListener('click', () => {
             lossesTally.textContent = losses;
         }
     }
+
+    // Update display
+    userDice.classList.remove('dice');
+    alienDice.classList.remove('dice');
+
+    const userSrc = 'assets/dice-assets/' + userRoll + '.jpg';
+    userDice.src = userSrc;
+    const alienSrc = 'assets/dice-assets/' + alienRoll + '.jpg';
+    alienDice.src = alienSrc;
 
     rounds++;
     roundsCounter.textContent = rounds;

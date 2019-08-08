@@ -57,7 +57,7 @@ div h2 {
 
 /*Below is z-index div*/
 
-#hidden {
+#hidden, .dice {
     display: none;
 }
 
