@@ -10,32 +10,23 @@ const choiceThree = document.getElementById('choice-three');
 // updateScore(username, score)
 // throw user to results page.
 
-let userName = store.getCurrentUser();
-let currentUser = store.getUser(userName);
-console.log(userName);
-
 choiceOne.addEventListener('click', ()=> {
     event.preventDefault();
-    userName.score += 1;
-    store.save('current-user', currentUser);
-    console.log(currentUser.score);
+    let score = 0;
+    store.updateScore(score);
     window.location = 'fin.html';
 });
 
 choiceTwo.addEventListener('click', ()=> {
     event.preventDefault();
-    userName.score += 1;
-    store.save('current-user', currentUser);
+    let score = 1;
+    store.updateScore(score);
     window.location = 'fin.html';
 });
 
 choiceThree.addEventListener('click', ()=> {
     event.preventDefault();
-    userName.score += 0;
-    store.save('current-user', currentUser);
+    let score = 2;
+    store.updateScore(score);
     window.location = 'fin.html';
 });
-
-window.onload = function() {
-    document.getElementById('quiz_audio').play();
-};

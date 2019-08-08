@@ -1,5 +1,4 @@
 import store from '../src/store.js';
-import testUsers from '../test/testusers.js';
 
 const test = QUnit.test;
 QUnit.module('store methods');
@@ -23,30 +22,38 @@ test('save a user object to store', assert => {
 
 });
 test('retrieves a user object from store.', assert => {
-    const key = 'all-users';
+    const key = 'current-user';
     const user1 = {
         name: 'fakename',
         score: 0,
     };
-    store.save(key, [user1]);
+    store.save(key, user1);
 
-    const user = store.getUser('fakename');
+    const user = store.getCurrentUser('fakename');
     assert.deepEqual(user, user1);
     
 });
-test('updates userObject score', assert => {
-    const key = 'all-users';
+test('updates current-user score', assert => {
+    //arrange
+    const key = 'current-user';
     const user1 = {
         name: 'fakename',
         score: 0,
     };
-    store.save(key, [user1]);
+    store.save(key, user1);
     const score = 1;
+    console.log(user1);
+
+    //act
+
+    const result = store.updateScore(score);
+
     const expected = {
         name: 'fakename',
         score: 1
     };
-    const result = store.updateScore(user1.name, score);
+    
+    //assert
     assert.deepEqual(result, expected);
 
 });
