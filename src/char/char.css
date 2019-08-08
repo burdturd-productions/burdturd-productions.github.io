@@ -14,7 +14,7 @@ html {
     width: 100%;
 }
 
-div.charactertext {
+div .charactertext {
     max-width: 20%;
     text-align: center;
     margin-top: 5%;
@@ -24,16 +24,15 @@ div.charactertext {
     position: relative;
 }
 
-div.storytext {
-    max-width: 20%;
-    text-align: center;
-    margin-top: 1%;
-    font-size: 1em;
-    margin-left: 25%;
-    position: relative;
-}
-
 button {
     align-content: center;
     max-width: fit-content;
+}
+
+.storytext {
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    left: 350px;
+    top: 80px;
 }
