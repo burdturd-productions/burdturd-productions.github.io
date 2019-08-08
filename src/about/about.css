@@ -1,5 +1,7 @@
 body {
     background-image: url(../../assets/egg-background.png);
+    background-size: 100% auto;
+
 }
 
 .icons-container {
