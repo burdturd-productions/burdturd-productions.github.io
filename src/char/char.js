@@ -1,16 +1,16 @@
 import store from '../store.js';
 
-
 const nameForm = document.getElementById('name');
 nameForm.addEventListener('submit', ()=>{
     event.preventDefault();
+    
     const formData = new FormData(nameForm);
     const currentUser = {
         name: formData.get('input-name'),
         score: 0,
     };
-    const allUsers = store.getAllUsers();
-    allUsers.push(currentUser);
+
+    store.getCurrentUser();
     store.save('current-user', currentUser);
     window.location = 'clues.html';
 });
