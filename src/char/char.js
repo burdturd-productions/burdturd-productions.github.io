@@ -5,15 +5,12 @@ const nameForm = document.getElementById('name');
 nameForm.addEventListener('submit', ()=>{
     event.preventDefault();
     const formData = new FormData(nameForm);
-    const newUser = {
+    const currentUser = {
         name: formData.get('input-name'),
         score: 0,
     };
     const allUsers = store.getAllUsers();
-    const currentUser = formData.get('input-name');
-    allUsers.push(newUser);
-    
-    store.save('all-users', allUsers);
+    allUsers.push(currentUser);
     store.save('current-user', currentUser);
     window.location = 'clues.html';
 });

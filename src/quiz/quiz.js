@@ -9,14 +9,11 @@ const choiceThree = document.getElementById('choice-three');
 // Assign that a number value
 // updateScore(username, score)
 // throw user to results page.
-let allUsers = store.getAllUsers();
-let currentUser = store.getCurrentUser();
-let userObject = store.getUser(currentUser);
+let userObject = store.getAllUsers();
 
 choiceOne.addEventListener('click', ()=> {
     event.preventDefault();
-    userObject.score += 1;
-
+  
     store.save('current-user', userObject);
     // window.location = 'fin.html';
 });
