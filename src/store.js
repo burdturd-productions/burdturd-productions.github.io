@@ -25,9 +25,23 @@ const store = {
     },
     //write scores to store.
     updateScore(username, score) {
-        const user = store.getUser(username);
-        user.score += score;
-        return user;
+        let allUsers = store.getAllUsers();
+        let currentUser = store.getCurrentUser();
+        let userObject = store.getUser(currentUser);
+
+        userObject.score += score;
+
+        console.log('all', allUsers);
+
+        // store.save('current-user', userObject);
+        store.save('all-users', allUsers);
+
+        userObject.score += score;
+        store.save('all-users', allUsers);
+
+    
+
+        return username;
     },
     getCurrentUser() {
         let currentUser = store.get('current-user');
