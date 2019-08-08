@@ -9,29 +9,33 @@ const choiceThree = document.getElementById('choice-three');
 // Assign that a number value
 // updateScore(username, score)
 // throw user to results page.
+let allUsers = store.getAllUsers();
+let currentUser = store.getCurrentUser();
 
-let userName = store.getCurrentUser();
-let currentUser = store.getUser(userName);
-console.log(userName);
+let userObject = store.getUser(currentUser);
+console.log(userObject);
 
 choiceOne.addEventListener('click', ()=> {
     event.preventDefault();
-    userName.score += 1;
-    store.save('current-user', currentUser);
-    console.log(currentUser.score);
-    window.location = 'fin.html';
+    userObject.score += 1;
+    for(let i =)
+
+    store.save('current-user', userObject);
+    // window.location = 'fin.html';
 });
 
 choiceTwo.addEventListener('click', ()=> {
     event.preventDefault();
-    userName.score += 1;
-    store.save('current-user', currentUser);
-    window.location = 'fin.html';
+    userObject.score += 1;
+
+    store.save('current-user', userObject);
+    // window.location = 'fin.html';
 });
 
 choiceThree.addEventListener('click', ()=> {
     event.preventDefault();
-    userName.score += 0;
-    store.save('current-user', currentUser);
-    window.location = 'fin.html';
+    userObject.score += 0;
+
+    store.save('current-user', userObject);
+    // window.location = 'fin.html';
 });

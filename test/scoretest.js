@@ -50,3 +50,31 @@ test('updates userObject score', assert => {
     assert.deepEqual(result, expected);
 
 });
+
+test ('updates score and saves it back to all-users array', assert => {
+    const users = [{
+        name: 'fakename',
+        score: 0,
+    },
+    {
+        name: 'fakename2',
+        score: 0,
+    }];
+    store.save('all-users', users);
+    const userName = 'fakename';
+    const score = 3;
+
+    const expected = [{
+        name: 'fakename',
+        score: 3,
+    },
+    {
+        name: 'fakename2',
+        score: 0,
+    }];
+    store.updateScore(userName, score);
+    const result = store.getAllUsers();
+
+
+    assert.deepEqual(result, expected);
+});
