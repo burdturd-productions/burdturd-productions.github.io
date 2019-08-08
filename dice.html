@@ -11,21 +11,27 @@
 
     <div class="grid-container">   
         <div class="grid-item">
-            <img src="assets/character-right.png" alt="Protagonist pigeon">
+            <img id="protagonist" class="character" src="assets/character-right.png" alt="Protagonist pigeon">
         </div>
     
         <div class="grid-item">
-            <h1>Round <span>1</span>/5</h1>
+            <h1>Round <span id="rounds-counter">1</span>/5</h1>
     
-            <h2>Wins: <span>0</span> Losses: <span>0</span></h2>
+            <h2>Wins: <span id="wins-tally">0</span> Losses: <span id="losses-tally">0</span></h2>
     
-            <img src="assets/dice-assets/user-dice.jpg" alt="User dice">
-        
-            <img src="assets/dice-assets/alien-dice.jpg" alt="Alien dice">
+            <div class="dice-container">
+                <img id="user-dice" class="dice" src="assets/dice-assets/user-dice.jpg" alt="User dice">
+            
+                <img id="alien-dice" class="dice" src="assets/dice-assets/alien-dice.jpg" alt="Alien dice">
+            </div>
+
+            <div class="button-container">
+                <button>Roll Dice!</button>
+            </div>
         </div>
     
         <div class="grid-item">
-            <img src="assets/dice-assets/placeholder-alien.jpg" alt="Alien adversary">
+            <img id="alien" class="character" src="assets/dice-assets/placeholder-alien.jpg" alt="Alien adversary">
         </div>
     </div>
 
