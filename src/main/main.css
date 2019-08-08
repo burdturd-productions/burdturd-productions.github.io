@@ -1,4 +1,4 @@
-main {
+body {
     font-family: 'Ubuntu', sans-serif;
     font-kerning: 2px;
     line-height: 1.25rem;
@@ -45,7 +45,6 @@ h1 {
 .logo-container {
     display: flex;
     justify-content: center;
-    margin-top: 35px;
 }
 
 .foot {
@@ -54,7 +53,6 @@ h1 {
     left: 0;
     height: auto;
     width: 25%;
-    z-index: -1;
 }
 
 .feet {
@@ -73,6 +71,7 @@ button:hover {
 .logo {
     height: auto;
     width: 70%;
+    vertical-align: center;
 }
 
 .logo-button {

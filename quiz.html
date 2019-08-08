@@ -24,22 +24,22 @@
 
     <main>
         <div class="container">
-            <form>
-                <button>
+            <form id='quiz-form'>
+                <button type="radio" name="choices" id="choice-one">
                     <img class="pic-1" src="assets/bubble-1.png">
                     <p>
                         <span id="username"></span>: <br><br>
                         "Eggcorns? Green Ooze? Maybe Georgie O. Squirrel is onto something?!"
                     </p>
                 </button>
-                <button>
+                <button type="radio" name="choices" id="choice-two">
                     <img class="pic-2" src="assets/bubble-2.png">
                     <p>
                         <span id="username"></span>: <br><br>
                         "I've gotta get to the bottom of this c..."
                     </p>
                 </button>
-                <button>
+                <button type="radio" name="choices" id="choice-three">
                     <img class="pic-3" src="assets/bubble-3.png">
                     <p>
                         <span id="username"></span>: <br><br>
@@ -50,5 +50,6 @@
             <img class="char-img" src="assets/character-left.png"/>
         </div>
     </main>
+    <script type="module" src="./src/quiz/quiz.js"></script>
 </body>
 </html>
