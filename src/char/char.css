@@ -10,7 +10,7 @@ html {
     background-repeat: no-repeat;
     position: fixed;
     bottom: 0;
-    height: 1000px;
+    height: 85%;
     width: 100%;
 }
 
@@ -35,5 +35,5 @@ div.storytext {
 
 button {
     align-content: center;
-    max-width: fit-content;    
+    max-width: fit-content;
 }
