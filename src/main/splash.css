@@ -1,0 +1,53 @@
+.splash-bkgd {
+    background-color: #ff9286;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.foot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 25%;
+    z-index: -1;
+}
+
+.feet {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: 25%;
+    z-index: -1;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.logo {
+    height: auto;
+    width: 70%;
+}
+
+.logo-button {
+    background: transparent;
+    border: none;
+    margin-top: 100px;
+}
+
+.logo-button:hover {    
+    -webkit-filter: drop-shadow(3px 3px 4px #7d2f29);
+    filter: drop-shadow(3px 3px 4px #7d2f29);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}

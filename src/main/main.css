@@ -1,12 +1,4 @@
-
-body {
-    font-family: 'Ubuntu', sans-serif;
-    font-kerning: 2px;
-    line-height: 1.25rem;
-}
-
 .nav-container {
-    font-family: 'Seymour One', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,11 +8,17 @@ body {
     top: 0;
     width: 100%;
     padding: 10px;    
-    filter: drop-shadow(3px 10px 10px grey);
+    font-family: 'Seymour One', sans-serif;
+    box-shadow: 5px 10px 19px -3px rgba(81, 84, 67, 0.7);
 }
 
 .nav-bar {
     height: 65px;
+    display: flex;
+}
+
+.nav-links {
+    align-self: center;
 }
 
 nav a {
@@ -30,63 +28,24 @@ nav a {
     font-size: 1.5rem;
 }
 
+.logo-home {
+    background-color: transparent;
+    border-color: transparent;
+}
+
 .logo-rev {
     height: 60px;
     float: left;
+    margin-left: 20px;
+    margin-right: -10px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-kerning: 2px;
+    line-height: 1.25rem;
 }
 
 h1 {
     font-family: 'Seymour One', sans-serif;
-}
-
-.splash-bkgd {
-    background-color: #ff9286;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-}
-
-.foot {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: auto;
-    width: 25%;
-}
-
-.feet {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: auto;
-    width: 25%;
-    z-index: -1;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-.logo {
-    height: auto;
-    width: 70%;
-    vertical-align: center;
-}
-
-.logo-button {
-    background: transparent;
-    border: none;
-}
-
-.logo-button:hover {    
-    -webkit-filter: drop-shadow(3px 3px 4px #7d2f29);
-    filter: drop-shadow(3px 3px 4px #7d2f29);
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
 }

@@ -35,3 +35,7 @@ choiceThree.addEventListener('click', ()=> {
     store.save('current-user', currentUser);
     window.location = 'fin.html';
 });
+
+window.onload = function() {
+    document.getElementById('quiz_audio').play();
+};
