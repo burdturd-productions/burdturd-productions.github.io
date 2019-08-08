@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dice Duel</title>
-    <link rel="stylesheet" href="dice.css">
+    <link rel="stylesheet" href="src/dice/dice.css">
 </head>
 <body>
+
+    <div class="grid-container">   
+        <div class="grid-item">
+            <img src="assets/character-right.png" alt="Protagonist pigeon">
+        </div>
     
+        <div class="grid-item">
+            <h1>Round <span>1</span>/5</h1>
+    
+            <h2>Wins: <span>0</span> Losses: <span>0</span></h2>
+    
+            <img src="assets/dice-assets/user-dice.jpg" alt="User dice">
+        
+            <img src="assets/dice-assets/alien-dice.jpg" alt="Alien dice">
+        </div>
+    
+        <div class="grid-item">
+            <img src="assets/dice-assets/placeholder-alien.jpg" alt="Alien adversary">
+        </div>
+    </div>
+
 </body>
 <script src="src/dice/dice.js" type="module"></script>
 </html>
