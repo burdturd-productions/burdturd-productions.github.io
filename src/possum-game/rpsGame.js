@@ -8,11 +8,7 @@ const winCount = document.getElementById('win-count');
 const lossCount = document.getElementById('loss-count');
 const drawCount = document.getElementById('draw-count');
 var dice = new Audio('../../assets/audio/possum_laugh.wav');
-var backgroundSound = new Audio('../../assets/audio/Funny_Chase_Music_A_-David_Fesliyan.mp3');
-backgroundSound.play;
-window.onload = function() {
-    document.getElementById('my_audio').play();
-};
+
 
 
 let wins = 0;
@@ -25,13 +21,13 @@ throwButton.addEventListener('click', () => {
     const userChoice = document.querySelector('input:checked').value;
     const gameResult = didPlayerWin(userChoice, computerChoice);
     dice.play();
-
+    
     result.classList.remove('hidden');
     const src = 'assets/rps/' + computerChoice + '.png';
     result.src = src;
     
     display(gameResult);
-
+    
 });
 function display(result) {
     if(result === true) {
@@ -50,3 +46,6 @@ function display(result) {
         drawCount.textContent = draws;
     }
 }
+window.onload = function() {
+    document.getElementById('possum_audio').play();
+};
