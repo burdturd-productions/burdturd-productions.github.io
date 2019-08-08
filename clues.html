@@ -7,6 +7,7 @@
     <title>Clues</title>
     <link rel="stylesheet" href="src/main/main.css">
     <link rel="stylesheet" href="src/clues/clues.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Questrial|Seymour+One|Ubuntu|Varela+Round&display=swap" rel="stylesheet">    <title>About Us</title>
 </head>
 
 <body>
@@ -27,77 +28,58 @@
     </header>
 
     <main>
-        <div class="grid-container">
+        <div class="main-container">
+            <div id="rules">
+                <h1 class="directions">Roll over the clues to gather info about the case<br>
+                Click the button to proceed if you're feeling lucky...</h1>
+            </div>
+
             <div id="left-container" class="grid-item">
                 <section>
-                    <div class="container">
-
+                    <div title="Acorn tops, evidence of recent eggcorn abuse" class="container">
                         <img class="clues" src="assets/clues-assets/acorns.png" alt="Acorn tops">
-    
-                        <p>
-                            Acorn tops were left here for some reason.
-                        </p>
                     </div>
                 </section>
             
                 <section>
-                    <div class="container">
+                    <div title="Poor little buggers, they never had a chance" class="container">
                         <img class="clues" src="assets/clues-assets/eggshells.png" alt="Eggshells">
-                        <p>
-                            Eggshells left at the scene of the crime.
-                        </p>
                     </div>
-                    
                 </section>
-            
-                <section>
-                    <div class="container">
 
-                        <img class="clues" src="assets/clues-assets/footprints.png" alt="Squirrel footprints"> 
-        
-                        <p>
-                            Footprints leading to an odd squirrel.
-                        </p>
-                    </div>
-                </section>
+                <section>
+                        <div title="A dirty cocktail napkin...looks like someone had a long night..." class="container">
+                            <img class="clues" src="assets/clues-assets/napkin.png" alt="Bar napkin">
+                        </div>
+                    </section>
             </div>
-        
+                
             <div id="right-container" class="grid-item">
                 <section>
-                    <div class="container">
-                        <img class="clues" src="assets/clues-assets/napkin.png" alt="Bar napkin">
-                        <p>
-                            A napkin from a nearby bar.
-                        </p>
-                    </div>
-                </section>
-              
-                <section>
-                    <div class="container">
-
+                    <div title="What is this strange ooze, things are getting weird around here" class="container">
                         <img class="clues" src="assets/clues-assets/ooze.png" alt="Vial of ooze">
-                        <p>
-                            Strange fluid...
-                        </p>  
                     </div>
                 </section> 
                     
                 <section>
-                    <div class="container">
-
+                    <div title="Sniff, sniff...Possum fur...those types are always up to no good" class="container">
                         <img class="clues" src="assets/clues-assets/fur.png" alt="Possum fur">
-        
-                        <p>
-                            A tuft of possum fur recovered from the scene.
-                        </p>
                     </div>
                 </section>
-            </div>
+
+                <section>
+                    <div title="Wait a minute, I know these footprints...Georgie O.?" class="container">
+                        <img class="clues" src="assets/clues-assets/footprints.png" alt="Squirrel footprints"> 
+                    </div>
+                </section>
+            </div> 
         </div>
+        <section class="button-format">
+                <div class="page-link">
+                    <a href="quiz.html"><button class="proceed">PROCEED</button></a>
+                </div>
+        </section>
+    </div>
     </main>
-    
-    <footer>
-        <a href="quiz.html"><button>Proceed</button></a>
-    </footer>
 </body>
 </html>
