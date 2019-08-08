@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice Duel</title>
+    <link rel="stylesheet" href="src/dice/dice.css">
+</head>
+<body>
+
+    <div id="hidden" class="wrapper">
+        <div class="wrapper-item">
+            <img src="assets/character-right.png" alt="Protagonist Pigeon">
+        </div>
+
+        <div class="wrapper-item">
+            <h1>Story</h1>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi tenetur sint tempora corrupti.
+                Cum autem maxime dicta? Voluptas temporibus ducimus atque ratione, 
+                voluptate rerum voluptatum ut dolorem repellat animi reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Laboriosam at deserunt commodi explicabo repudiandae ut eveniet, magnam reiciendis, 
+                similique ullam voluptates aspernatur eos, dicta alias quas dolorum perferendis aut veritatis.
+            </p>
+            
+            <h2>Instructions</h2>
+            
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi tenetur sint tempora corrupti.
+                Cum autem maxime dicta? Voluptas temporibus ducimus atque ratione, 
+                voluptate rerum voluptatum ut dolorem repellat animi reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Laboriosam at deserunt commodi explicabo repudiandae ut eveniet, magnam reiciendis, 
+                similique ullam voluptates aspernatur eos, dicta alias quas dolorum perferendis aut veritatis.
+            </p>
+        </div>
+
+        <div class="wrapper-item">
+            <img src="assets/dice-assets/placeholder-squirrel.jpg" alt="Weird Squirrel">
+        </div>
+    </div>
+
+    <div class="grid-container">   
+        <div class="grid-item">
+            <img id="protagonist" class="character" src="assets/character-right.png" alt="Protagonist pigeon">
+        </div>
+    
+        <div class="grid-item">
+            <h1>Round <span id="rounds-counter">0</span>/5</h1>
+    
+            <h2>Wins: <span id="wins-tally">0</span> Losses: <span id="losses-tally">0</span></h2>
+    
+            <div class="dice-container">
+                <img id="user-dice" class="dice" src="" alt="User dice">
+            
+                <img id="alien-dice" class="dice" src="" alt="Alien dice">
+            </div>
+
+            <div class="button-container">
+                <button id="dice-roll">Roll Dice!</button>
+            </div>
+        </div>
+    
+        <div class="grid-item">
+            <img id="alien" class="character" src="assets/dice-assets/placeholder-alien.jpg" alt="Alien adversary">
+        </div>
+    </div>
+
+</body>
+<script src="src/dice/dice.js" type="module"></script>
+</html>

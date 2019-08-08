@@ -7,7 +7,6 @@ let textResult = document.getElementById('text-id');
 let userName = store.getCurrentUser();
 let user = store.getUser(userName);
 let userScore = user.score;
-console.log(userScore);
 
 // Need and if statement that Renders results based on score.
 if(userScore > 0) {
