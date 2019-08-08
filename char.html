@@ -33,9 +33,11 @@
 
     <main>
         <div id="background">
-            <div class='charactertext'><h1>The Case!</h1></div>
+            <div class='storytext'>
+                <h1>The Case!</h1>
 
-            <div class='storytext'><h2>"Under The Eggfluence"</h2>
+                <h2>"Under The Eggfluence"</h2>
+
                 <p>
                     A string of eggnappings have plagued the streets the past couple weeks. 
                     Distressed families are pleading to be reunited with their egglings.   
@@ -55,17 +57,19 @@
                     preaching his conspiracy theories to any who will listen. 
                     He claims to have inside scoop on the dark dealings happening behind the scenes.
                 </p>
+
+                <div id="button-and-form">
+                    <form id="name">
+                        <p>Private investigator, what is your name?</p>
+        
+                        <label for='input-name'>
+                            <input name="input-name" type="text" required>
+                        </label>
+        
+                        <button>PROCEED</button>
+                    </form>
+                </div>
             </div>
-
-            <form id="name">
-                <p>What do you want to be called?</p>
-
-                <label for='input-name'>
-                    <input name="input-name" type="text" required>
-                </label>
-
-                <button>PROCEED</button>
-            </form>
         </div>
     </main>
     <script  type="module" src="./src/char/char.js"></script>
