@@ -1,5 +1,4 @@
 import store from '../src/store.js';
-import testUsers from '../test/testusers.js';
 
 const test = QUnit.test;
 QUnit.module('store methods');
