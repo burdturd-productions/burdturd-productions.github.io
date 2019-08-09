@@ -1,3 +1,9 @@
+html {
+    background-image: url(../../assets/dice-assets/ufo-bkgd.png);
+    background-repeat: repeat;
+    background-size: 70%;
+}
+
 .grid-container {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -5,15 +11,6 @@
     max-height: 600px;
     z-index: 1;
     margin-top: 100px;
-}
-
-.character {
-    height: auto;
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    margin-left: 150px;
 }
 
 .dice-container {
@@ -31,10 +28,6 @@
     margin-top: 100px;
     width: 100px;
     padding: 5px;
-}
-
-#alien {
-    margin-left: 40%;
 }
 
 #alien-dice {
@@ -72,4 +65,13 @@ div h2 {
 
 .wrapper-item p {
     text-align: center;
+}
+
+.dice-bkgd {
+    height: 85%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    margin-right: 100px;
 }
