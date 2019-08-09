@@ -30,3 +30,6 @@ choiceThree.addEventListener('click', ()=> {
     store.updateScore(score);
     window.location = 'fin.html';
 });
+window.onload = function() {
+    document.getElementById('quiz_audio').play();
+};
