@@ -4,23 +4,30 @@
     grid-template-rows: 2fr 2fr 1fr
 }
 
-.side-image {
-    margin: 50px;
-}
-
 .grid-item {
     max-height: 50px;
 }
+
+.side-image {
+    margin-top: 200px;
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+#main {
+    position: absolute;
+    bottom: 0;
+}
+
+/*
+
 
 h1 {
     display: flex;
     justify-content: center;
 }
 
-#main {
-    margin-right: 80px;
-    background-color: #f74a3f;
-}
+
 
 .main-image {
     margin-left: 200px;
@@ -36,3 +43,4 @@ footer {
     margin-top: 100px;
     margin-bottom: 0;
 }
+*/
