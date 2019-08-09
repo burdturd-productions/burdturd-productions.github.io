@@ -34,38 +34,45 @@
 
     <main>
         <section id="userThrow">
-            <h2>Choose your Play</h2>
-            <h3>You've stumbled into a possum roshambo, better make a move! </h3>
-            <label>
-                <input type="radio" name="throw" value="rock" checked>
-                <img class="radio-image" src="assets/rps-assets/user-rock.png">
-            </label>
-            <label>
-                <input type="radio" name="throw" value="paper">
-                <img class="radio-image" src="assets/rps-assets/user-paper.png">
-            </label>
-            <label>
-                <input type="radio" name="throw" value="scissors">
-                <img class="radio-image" src="assets/rps-assets/user-scissors.png">
-            </label>
-                <p>
+            <div>
+                <h2>Choose your Play</h2>
+    
+                <h3>The possums challenge you to roshambo, better make a move! </h3>
+                
+                <label>
+                    <input type="radio" name="throw" value="rock" checked>
+                    <img class="radio-image" src="assets/rps-assets/user-rock.png">
+                </label>
+    
+                <label>
+                    <input type="radio" name="throw" value="paper">
+                    <img class="radio-image" src="assets/rps-assets/user-paper.png">
+                </label>
+    
+                <label>
+                    <input type="radio" name="throw" value="scissors">
+                    <img class="radio-image" src="assets/rps-assets/user-scissors.png">
+                </label>
+    
+                <div class="button-container">
                     <button id="throw-button" class="proceed">Throw!</button>
-                </P>
-        </section>
+                </div>
 
-        <section id="generatedThrow">
-            <label  id="rock">
-                <img class="hidden" id="result" src=" ">
-            </label>
-        </section>
-            
-        <section class="results">
-            <p id="message"></p>
-            <p id="score">
-                <span>Wins: <span id="win-count"></span></span>
-                <span>Losses: <span id="loss-count"></span></span>
-                <span>Draws: <span id="draw-count"></span></span>
-            </p>
+                <section id="generatedThrow">
+                    <label  id="rock">
+                        <img class="hidden" id="result" src=" ">
+                    </label>
+                </section>
+
+                <section class="results">
+                    <p id="message"></p>
+                    <p id="score">
+                        <span>Wins: <span id="win-count"></span></span>
+                        <span>Losses: <span id="loss-count"></span></span>
+                        <span>Draws: <span id="draw-count"></span></span>
+                    </p>
+                </section>
+            </div>
         </section>
 
         <div id="possum-container">
