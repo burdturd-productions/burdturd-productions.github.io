@@ -56,9 +56,9 @@ diceRoll.addEventListener('click', () => {
     userDice.classList.remove('dice');
     alienDice.classList.remove('dice');
 
-    const userSrc = 'assets/dice-assets/' + userRoll + '.jpg';
+    const userSrc = 'assets/dice-assets/' + userRoll + '.png';
     userDice.src = userSrc;
-    const alienSrc = 'assets/dice-assets/' + alienRoll + '.jpg';
+    const alienSrc = 'assets/dice-assets/' + alienRoll + '.png';
     alienDice.src = alienSrc;
 
     rounds++;
