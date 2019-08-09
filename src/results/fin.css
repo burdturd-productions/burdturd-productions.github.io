@@ -1,5 +1,5 @@
 body {
-    height: 460px;
+    max-height: 460px;
 }
 
 .text {
@@ -11,13 +11,16 @@ body {
 footer {
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: 0;
 }
 
 footer img {
-    position: relative;
-    bottom: -1px;
+    margin-bottom: -10px;
     width: 1000px;
     max-height: 150px;
+    position: relative;
+    bottom: 0;
 }
 
 .story-image {

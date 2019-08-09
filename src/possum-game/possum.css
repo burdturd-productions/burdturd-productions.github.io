@@ -49,22 +49,20 @@ input:checked + .radio-image {
     visibility: hidden;
 }
 
-/*
-
-
-.possum-container {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    z-index: -1;
+#generatedThrow img {
+    width: 80%;
+    position: relative;
+    left: 10%;
 }
+
 
 .possum-bkgd {
     height: auto;
-    width: 90%;
+    width: 80%;
     position: absolute;
-    border-color: transparent;
     bottom: 0;
+    left: 13%;
+    z-index: -10;
+    border-color: transparent;
     margin-bottom: -6px;
-    z-index: -1;
 }
