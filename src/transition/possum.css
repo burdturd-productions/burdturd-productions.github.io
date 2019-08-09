@@ -9,6 +9,10 @@ html {
     flex-direction: column;
     text-align: center;
     margin-top: 130px;
+    position: relative;
+    height: 30%;
+    width: 400px;
+    left: 23%;
 }
 
 .possum-container {
@@ -21,6 +25,7 @@ html {
 .possum-bkgd {
     height: auto;
     width: 90%;
+    height: 100%;
     position: absolute;
     bottom: 0;
     z-index: -1;
