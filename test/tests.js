@@ -1,3 +1,3 @@
 import './scoretest.js';
 import './findUser.test.js';
-import './bar-test';
+import './bar-test.js';
