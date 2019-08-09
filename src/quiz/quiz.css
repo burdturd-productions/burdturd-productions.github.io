@@ -1,10 +1,23 @@
 body {
-    background-image: url(../../assets/quiz-background.jpg);
-    background-size: 100% auto;
+background-image: url(../../assets/quiz-background.jpg);
+background-size: 100% auto;
+height: auto;
+}
+
+button[type='radio'] {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .container {
-    bottom: 0;display: flex;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container {
+    bottom: 0;
+    display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
@@ -18,36 +31,32 @@ form {
     text-align: center;
 }
 
-.pic-1 {
-    float: left;
-    width: 80%;
-    height: auto;
-    margin-top: 300px;
-}
-
-.pic-2 {
-    width: 80%;
-    height: auto;
-}
-
-.pic-3 {
-    float: right;
-    width: 80%;
-    height: auto;
-    margin-top: 300px;
-}
-
-button[type='radio'] {
-    background-color: transparent;
-    border-color: transparent;
-}
-
 .char-img {
     height: auto;
-}
-
-footer {
-    position: fixed;
     bottom: 0;
+    width: 30%;
+    max-width: 500px;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    margin-left: 130px;
 }
 
+.bubble-left {
+    float: left;
+    margin-top: 300px;
+    height: 350px;
+    width: auto;
+}
+
+.bubble-middle {
+    width: auto;
+    height: 375px;
+}
+
+.bubble-right {
+    float: right;
+    margin-top: 300px;
+    height: 400px;
+    width: auto;
+}

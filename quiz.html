@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="src/quiz/quiz.css">
     <link rel="stylesheet" href="src/main/main.css">
+
     <title>Quiz</title>
 </head>
 <body class="quiz-page">
@@ -29,18 +30,30 @@
     <main>
         <div class="container">
             <form id='quiz-form'>
-                <button type="radio" name="choices" id="choice-one">
-                    <img class="pic-1" src="assets/bubble-1.png">
-                </button>
-                <button type="radio" name="choices" id="choice-two">
-                    <img class="pic-2" src="assets/bubble-2.png">
-                </button>
-                <button type="radio" name="choices" id="choice-three">
-                    <img class="pic-3" src="assets/bubble-3.png">
-                </button>
+
+                <div class="container-item">
+                    <button type="radio" name="choices" id="choice-one">
+                        <img class="bubble-left" src="assets/bubble-1.png">
+                    </button>
+                </div>
+
+                <div class="container-item">
+                    <button type="radio" name="choices" id="choice-two">
+                        <img class="bubble-middle" src="assets/bubble-2.png">
+                    </button>
+
+                    <div class="char-img">
+                        <img src="assets/character-left.png">
+                    </div>
+                </div>
+
+                <div class="container-item">
+                    <button type="radio" name="choices" id="choice-three">
+                        <img class="bubble-right" src="assets/bubble-3.png">
+                    </button>
+                </div>
             </form>
         </div>
-        <footer><img src="assets/character-left.png"></footer>
     </main>
     <script type="module" src="./src/quiz/quiz.js"></script>
 </body>
