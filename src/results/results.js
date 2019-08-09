@@ -5,7 +5,6 @@ let textResult = document.getElementById('text-id');
 
 let currentUser = store.getCurrentUser();
 let userScore = currentUser.score;
-console.log(userScore);
 
 // Need an if statement that Renders results based on score.
 if(userScore === 2) {
@@ -17,6 +16,7 @@ else if(userScore === 1) {
     textResult.textContent = 'Something doesn\'t add up, are you sure you solved the case? Maybe you shouldn\'t have had so many drinks with those cats.';
 }
 else if(userScore === 0) {
+
     storyImg.src = '../../assets/lose-one.png';
     textResult.textContent = 'The possum posie were just caught in the middle. Check your Biases!';
 }

@@ -27,8 +27,6 @@ const store = {
         const currentUser = store.getCurrentUser();
         currentUser.score = score;
         
-        // console.log(currentUser);
-        
         // store.save('current-user', currentUser);
         store.save('current-user', currentUser);
         

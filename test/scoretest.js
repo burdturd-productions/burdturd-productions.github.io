@@ -42,7 +42,6 @@ test('updates current-user score', assert => {
     };
     store.save(key, user1);
     const score = 1;
-    console.log(user1);
 
     //act
 
