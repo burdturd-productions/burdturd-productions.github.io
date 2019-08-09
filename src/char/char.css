@@ -21,19 +21,19 @@ main {
 
 .bio-container {
     height: auto;
-    width: 90%;
+    width: 80%;
     position: absolute;
     bottom: 0;
     z-index: -1;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 .bio-story {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     margin-top: 250px;
-    margin-left: 35%;
+    margin-left: 30%;
     height: auto;
     width: 35%;
 }
@@ -52,5 +52,5 @@ p {
     position: fixed;
     bottom: 0;
     z-index: -1;
-    margin-left: 150px;
+    margin-left: 200px;
 }
