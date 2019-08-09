@@ -3,6 +3,7 @@ import { compareNumbers, getRandomInt } from './compare-numbers.js';
 const guessButton = document.getElementById('button');
 const result = document.getElementById('result');
 const numberInput = document.getElementById('number-input');
+var gulp = new Audio('../../assets/audio/gulp.mp3');
 
 
 let numberOfGuesses = 3;
@@ -13,6 +14,7 @@ guessButton.addEventListener('click', function(event) {
     let userGuess = parseInt(numberInput.value);
     let randomNumber = getRandomInt(20);
     let result = compareNumbers(userGuess, randomNumber);
+    gulp.play();
 
     if(result === -1) {
         resultMessage('Trixie is not amused...better drink up!');
