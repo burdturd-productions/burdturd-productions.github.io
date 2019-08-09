@@ -14,7 +14,7 @@ choiceOne.addEventListener('click', ()=> {
     event.preventDefault();
     let score = 0;
     store.updateScore(score);
-    window.location = 'fin.html';
+    window.location = 'possum.html';
 });
 
 choiceTwo.addEventListener('click', ()=> {
@@ -28,7 +28,7 @@ choiceThree.addEventListener('click', ()=> {
     event.preventDefault();
     let score = 2;
     store.updateScore(score);
-    window.location = 'dice.html';
+    window.location = 'squirrel.html';
 });
 window.onload = function() {
     document.getElementById('quiz_audio').play();

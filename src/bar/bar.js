@@ -43,15 +43,14 @@ function resultMessage(string) {
 
 function winDisplay() {
     result.textContent = '';
-    hiFive.classList.remove('hidden');
+    window.location = 'fin.html';
     disableButton();
 }
 
-// window.location = 'fin.html';
 
 function loseDisplay() {
     result.textContent = '';
-    youLose.classList.remove('hidden');
+    window.location = 'fin.html';
     disableButton();
 }
 
