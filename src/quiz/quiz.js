@@ -21,14 +21,14 @@ choiceTwo.addEventListener('click', ()=> {
     event.preventDefault();
     let score = 1;
     store.updateScore(score);
-    window.location = 'fin.html';
+    window.location = 'bar.html';
 });
 
 choiceThree.addEventListener('click', ()=> {
     event.preventDefault();
     let score = 2;
     store.updateScore(score);
-    window.location = 'fin.html';
+    window.location = 'dice.html';
 });
 window.onload = function() {
     document.getElementById('quiz_audio').play();
