@@ -8,14 +8,13 @@ input {
 
 .radio-image {
     border: 5px solid royalblue;
-    border-radius: 100%;
+    
 }
 input:checked + .radio-image {
     border: 5px solid red;
 }
 body img {
     border: 5px solid royalblue;
-    border-radius: 100%;
     width: 20%;
     height: 20%;
 }

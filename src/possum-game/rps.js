@@ -9,7 +9,6 @@ export function getThrowFromNumber(number) {
     else if(number === 2) {
         return 'scissors';
     }
-
 }
 function getThrow() {
     const randomNumber = Math.floor(Math.random() * 3);
