@@ -29,7 +29,7 @@ throwButton.addEventListener('click', () => {
         window.location = 'fin.html';
     }
     result.classList.remove('hidden');
-    const src = 'assets/rps/' + computerChoice + '.png';
+    const src = 'assets/rps-assets/cpu-' + computerChoice + '.png';
     result.src = src;
     display(gameResult);
     

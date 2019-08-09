@@ -3,8 +3,7 @@ import { compareNumbers, getRandomInt } from './compare-numbers.js';
 const guessButton = document.getElementById('button');
 const result = document.getElementById('result');
 const numberInput = document.getElementById('number-input');
-const hiFive = document.getElementById('hi-five'); 
-const youLose = document.getElementById('you-lose');
+
 
 let numberOfGuesses = 3;
 
@@ -43,15 +42,14 @@ function resultMessage(string) {
 
 function winDisplay() {
     result.textContent = '';
-    hiFive.classList.remove('hidden');
+    window.location = 'fin.html';
     disableButton();
 }
 
-// window.location = 'fin.html';
 
 function loseDisplay() {
     result.textContent = '';
-    youLose.classList.remove('hidden');
+    window.location = 'fin.html';
     disableButton();
 }
 

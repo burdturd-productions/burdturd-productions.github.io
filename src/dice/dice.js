@@ -69,10 +69,12 @@ diceRoll.addEventListener('click', () => {
          // Check if user won or lost
 
         if(wins > losses) {
-            // go to win result
+            window.location = 'fin.html';
+
         }       
         else if(wins < losses) {
-            // go to lose result
+            window.location = 'fin.html';
+
         }
     }
 });
