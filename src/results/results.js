@@ -1,6 +1,5 @@
 import store from '../store.js';
 
-let sideImg = document.getElementById('side-image');
 let storyImg = document.getElementById('story-image');
 let textResult = document.getElementById('text-id');
 
