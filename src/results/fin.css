@@ -3,7 +3,7 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% auto auto auto;
     grid-template-areas:
-        "empty emtpy"
+        "empty empty"
         "left  story"
         "left  button"
         "left footer";
