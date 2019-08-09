@@ -46,6 +46,6 @@ function display(result) {
         drawCount.textContent = draws;
     }
 }
-window.setInterval( 1  ) = function() {
+window.onload = function() {
     document.getElementById('possum_audio').play();
-;
+};
