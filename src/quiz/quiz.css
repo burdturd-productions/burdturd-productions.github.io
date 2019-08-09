@@ -1,15 +1,28 @@
 body {
-    background-image: url(../../assets/quiz-background.jpg);
-    background-size: 100% auto;
+background-image: url(../../assets/quiz-assets/quiz-background.jpg);
+background-size: 100% auto;
+height: auto;
+}
+
+button[type='radio'] {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translate3d(-2px, -2px, 0);
+    -webkit-filter: drop-shadow(4px 4px 4px black);
+    filter: drop-shadow(4px 4px 4px black);
 }
 
 .container {
-    bottom: 0;display: flex;
+    bottom: 0;
+    display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
     margin-top: 100px;
-    padding: 20px;
 }
 
 form {
@@ -18,36 +31,38 @@ form {
     text-align: center;
 }
 
-.pic-1 {
-    float: left;
-    width: 80%;
-    height: auto;
-    margin-top: 300px;
-}
-
-.pic-2 {
-    width: 80%;
-    height: auto;
-}
-
-.pic-3 {
-    float: right;
-    width: 80%;
-    height: auto;
-    margin-top: 300px;
-}
-
-button[type='radio'] {
-    background-color: transparent;
-    border-color: transparent;
-}
-
 .char-img {
     height: auto;
-}
-
-footer {
-    position: fixed;
     bottom: 0;
+    width: 30%;
+    max-width: 600px;
+    margin: -10px;
+    margin-top: -20px;
+    padding: 0;
+    position: fixed;
+    bottom: -10px;
+    z-index: 1;
 }
 
+.bubble-left {
+    float: left;
+    margin-top: 300px;
+    height: 400px;
+    margin-right: -120px;
+    width: auto;
+}
+
+.bubble-middle {
+    width: auto;
+    height: 450px;
+    margin-bottom: -20px;
+    margin-left: 80px;
+}
+
+.bubble-right {
+    float: right;
+    margin-top: 300px;
+    margin-left: -100px;
+    height: 500px;
+    width: auto;
+}

@@ -4,59 +4,53 @@ html {
     background-size: 100%;
 }
 
-.main-container {
-    display: flex;
-    justify-content: center;
-    background-image: url(../../assets/bio-folder.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
-    left: 7%;
-    height: 85%;
-    width: 100%;
-}
-
-#background {
-    justify-content: center;
-    margin-top: 100px;
+main {
+    width:95%;
 }
 
 .name-input {
-    width: 300px;
+    width: 350px;
     height: 50px;
     border-color: black;
     margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
 }
 
-div .charactertext {
-    max-width: 20%;
-    text-align: center;
-    margin-top: 5%;
-    font-size: 1em;
-    margin-left: 25%;
-    margin-top: 150px;
-    position: relative;
+
+.bio-container {
+    height: auto;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    margin-left: 150px;
 }
 
-button {
-    align-content: center;
-    max-width: fit-content;
-}
-
-h1 {
-    margin: 10px;
-}
-
-.storytext {
+.bio-story {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 400px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 250px;
+    margin-left: 35%;
+    height: auto;
+    width: 35%;
 }
 
-.storytext p {
+h2 {
+    margin-top: 10px;
+}
+
+p {
     margin: 10px;
+}
+
+.bio-bkgd {
+    height: 88%;
+    width: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    margin-left: 5%;
 }
