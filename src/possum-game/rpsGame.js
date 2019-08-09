@@ -7,7 +7,7 @@ const message = document.getElementById('message');
 const winCount = document.getElementById('win-count');
 const lossCount = document.getElementById('loss-count');
 const drawCount = document.getElementById('draw-count');
-var dice = new Audio('../../assets/audio/possum_laugh.wav');
+var possum = new Audio('../../assets/audio/possum_laugh.wav');
 
 
 
@@ -22,7 +22,7 @@ throwButton.addEventListener('click', () => {
     const computerChoice = getThrow();
     const userChoice = document.querySelector('input:checked').value;
     const gameResult = didPlayerWin(userChoice, computerChoice);
-    dice.play();
+    possum.play();
     turns++;
     
     if(turns === 10) {

@@ -25,7 +25,7 @@ const store = {
 
     updateScore(score) {
         const currentUser = store.getCurrentUser();
-        currentUser.score += score;
+        currentUser.score = score;
         
         // console.log(currentUser);
         

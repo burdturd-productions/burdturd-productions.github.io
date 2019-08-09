@@ -4,6 +4,7 @@ const lossesTally = document.getElementById('losses-tally');
 const userDice = document.getElementById('user-dice');
 const alienDice = document.getElementById('alien-dice');
 const diceRoll = document.getElementById('dice-roll');
+var diceAudio = new Audio('../../assets/audio/dice.wav');
 
 // how are results being rendered?
     // disable button?
@@ -24,6 +25,7 @@ diceRoll.addEventListener('click', () => {
     // Get user and computer rolls
     let alienRoll = getDieSide();
     let userRoll = getDieSide();
+    diceAudio.play();
 
     // Compare rolls
     if(userRoll > alienRoll) {
