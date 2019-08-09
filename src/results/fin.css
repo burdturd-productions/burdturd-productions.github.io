@@ -1,38 +1,26 @@
-.grid-container {
-    display: inline-grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 2fr 1fr
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% auto auto auto;
+    grid-template-areas:
+        "empty emtpy"
+        "left  story"
+        "left  button"
+        "left footer";
+    background-color: blue;
+    margin: 0;
+} 
+div .main-image {
+    grid-area: left;
+    height: auto;
+    width: 100%;
 }
 
-.side-image {
-    margin: 50px;
-}
-
-.grid-item {
-    max-height: 50px;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-}
-
-#main {
-    margin-right: 80px;
-    background-color: #f74a3f;
-}
-
-.main-image {
-    margin-left: 200px;
-}
-
-p {
-    text-align: center;
+.proceed {
+    grid-area: button;
+    background-color: red;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 0;
+    grid-area: footer;
 }
