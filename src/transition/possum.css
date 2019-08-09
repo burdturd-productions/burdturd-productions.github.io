@@ -1,7 +1,7 @@
 html {
     background-image: url(../../assets/possum-assets/possum-bkgd.png);
     background-repeat: repeat;
-    background-size: 70%;
+    background-size: 100%;
 }
 
 .possum-story {
@@ -9,6 +9,10 @@ html {
     flex-direction: column;
     text-align: center;
     margin-top: 130px;
+    position: relative;
+    height: 30%;
+    width: 400px;
+    left: 23%;
 }
 
 .possum-container {
@@ -20,7 +24,7 @@ html {
 
 .possum-bkgd {
     height: 100%;
-    width: autp;
+    width: auto;
     position: absolute;
     left: -200px;
     bottom: 0;

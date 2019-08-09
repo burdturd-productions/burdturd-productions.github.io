@@ -22,62 +22,28 @@
             <a class="nav-a" href="about.html">About</a>
         </nav>
     </header>
-
+    
     <main>
-        <div id="hidden" class="wrapper">
-            <div class="wrapper-item">
-                <img src="assets/character-right.png" alt="Protagonist Pigeon">
-            </div>
-
-            <div class="wrapper-item">
-                <h1>Story</h1>
-
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi tenetur sint tempora corrupti.
-                    Cum autem maxime dicta? Voluptas temporibus ducimus atque ratione, 
-                    voluptate rerum voluptatum ut dolorem repellat animi reiciendis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Laboriosam at deserunt commodi explicabo repudiandae ut eveniet, magnam reiciendis, 
-                    similique ullam voluptates aspernatur eos, dicta alias quas dolorum perferendis aut veritatis.
-                </p>
+        <div class="grid-container">  
                 
-                <h2>Instructions</h2>
-                
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi tenetur sint tempora corrupti.
-                    Cum autem maxime dicta? Voluptas temporibus ducimus atque ratione, 
-                    voluptate rerum voluptatum ut dolorem repellat animi reiciendis.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Laboriosam at deserunt commodi explicabo repudiandae ut eveniet, magnam reiciendis, 
-                    similique ullam voluptates aspernatur eos, dicta alias quas dolorum perferendis aut veritatis.
-                </p>
-            </div>
-
-            <div class="wrapper-item">
-                <img src="assets/dice-assets/placeholder-squirrel.jpg" alt="Weird Squirrel">
-            </div>
-        </div>
-
-        <div class="grid-container">   
-        
             <div class="grid-item">
                 <h1>Round <span id="rounds-counter">0</span>/5</h1>
         
                 <h2>Wins: <span id="wins-tally">0</span> Losses: <span id="losses-tally">0</span></h2>
         
                 <div class="dice-container">
-                    <img id="user-dice" class="dice" src="" alt="User dice">
+                    <img id="user-dice" class="dice" src="" alt="">
                 
-                    <img id="alien-dice" class="dice" src="" alt="Alien dice">
+                    <img id="alien-dice" class="dice" src="" alt="">
                 </div>
 
                 <div class="button-container">
                     <button class="proceed" id="dice-roll">Roll Dice!</button>
                 </div>
-            </div>
-        
-            <div class="grid-item">
-                <img class="dice-bkgd" class="character" src="assets/dice-assets/dice-pigeon.png" alt="Alien adversary">
+
+                <div id="background-container">
+                    <img class="dice-bkgd" class="character" src="assets/dice-assets/dice-pigeon.png" alt="Alien adversary">
+                </div>
             </div>
         </div>
     </main>
