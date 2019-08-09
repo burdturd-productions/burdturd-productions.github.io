@@ -4,54 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Possum Game</title>
     <link rel="stylesheet" href="./src/main/main.css">
     <link rel="stylesheet" href="./src/possum-game/possum.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Questrial|Seymour+One|Ubuntu|Varela+Round&display=swap" rel="stylesheet">
+    <title>Possum Game</title>
 </head>
+
 <body>
-        <audio autoplay>
-                <source id="possum_audio" src="assets/audio/Absurd_-_David_Fesliyan.mp3" type="audio/mp3">
-            </audio>
+    <audio autoplay>
+        <source id="possum_audio" src="assets/audio/Absurd_-_David_Fesliyan.mp3" type="audio/mp3">
+    </audio>
 
+    <header class="nav-container">
+        <nav class="nav-bar">
+            <button class="logo-home"> 
+                <a href="index.html"><img class="logo-rev" src="./assets/logo-reverse.png" alt="Pigeon PI Logo Button"></a>   
+            </button>
+            <a class="nav-a" href="char.html">Bio</a>
+            <a class="nav-a" href="clues.html">Clues</a>
+            <a class="nav-a" href="quiz.html">Quiz</a>
+            <a class="nav-a" href="possum.html">Possum</a>
+            <a class="nav-a" href="bar.html">Bar Level</a>
+            <a class="nav=a" href="squirrel.html">Squirrel</a>
+            <a class="nav-a" href="dice.html">Dice Level</a>
+            <a class="nav-a" href="fin.html">Results</a>
+            <a class="nav-a" href="about.html">About</a>
+            </nav>
+    </header>
 
+    <main>
         <section id="userThrow">
-                <h2>Choose your Play</h2>
-                <label>
-                    <input type="radio" name="throw" value="rock" checked>
-                    <img class="radio-image" src="assets/rps-assets/user-rock.png">
-                </label>
-                <label>
-                    <input type="radio" name="throw" value="paper">
-                    <img class="radio-image" src="assets/rps-assets/user-paper.png">
-                </label>
-                <label>
-                    <input type="radio" name="throw" value="scissors">
-                    <img class="radio-image" src="assets/rps-assets/user-scissors.png">
-                </label>
-                        <p>
-                            <button id="throw-button">Throw!</button>
-                        </P>
-            </section>
-            <section id="generatedThrow">
+            <h2>Choose your Play</h2>
+            <h3>You've stumbled into a possum roshambo, better make a move! </h3>
+            <label>
+                <input type="radio" name="throw" value="rock" checked>
+                <img class="radio-image" src="assets/rps-assets/user-rock.png">
+            </label>
+            <label>
+                <input type="radio" name="throw" value="paper">
+                <img class="radio-image" src="assets/rps-assets/user-paper.png">
+            </label>
+            <label>
+                <input type="radio" name="throw" value="scissors">
+                <img class="radio-image" src="assets/rps-assets/user-scissors.png">
+            </label>
+                <p>
+                    <button id="throw-button" class="proceed">Throw!</button>
+                </P>
+        </section>
+
+        <section id="generatedThrow">
+            <label  id="rock">
+                <img class="hidden" id="result" src=" ">
+            </label>
+        </section>
+            
+        <section class="results">
+            <p id="message"></p>
+            <p id="score">
+                <span>Wins: <span id="win-count"></span></span>
+                <span>Losses: <span id="loss-count"></span></span>
+                <span>Draws: <span id="draw-count"></span></span>
+            </p>
+        </section>
+
+        <div id="possum-container">
+            <img class="possum-bkgd" src="assets/rps-assets/rps-battle.png" alt="Possum Image"/>
+        </div>
+    </main>
         
-                    <label  id="rock">
-                        <img class="hidden" id="result" src=" ">
-                    </label>
-        
-            </section>
-        
-                <section class="results">
-                    <p id="message"></p>
-                    <p id="score">
-                        <span>Wins: <span id="win-count"></span></span>
-                        <span>Losses: <span id="loss-count"></span></span>
-                        <span>Draws: <span id="draw-count"></span></span>
-                    </p>
-                </section>
-            </section>
-        
-            <script type="module" src="src/possum-game/rpsGame.js"> </script>
-       
+    <script type="module" src="src/possum-game/rpsGame.js"> </script>
 </body>
 </html>

@@ -8,6 +8,7 @@ input {
 
 .radio-image {
     border: 5px solid royalblue;
+    border-radius: 100%;
     
 }
 input:checked + .radio-image {
@@ -19,7 +20,24 @@ body img {
     height: 20%;
 }
 body {
-    background-image: url('../../assets/squirrel-bkgd.png');
+    background-color: thistle;
     margin-left: 30%;
     margin-right: 30%;
+}
+
+.possum-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.possum-bkgd {
+    height: auto;
+    width: 90%;
+    position: absolute;
+    border-color: transparent;
+    bottom: 0;
+    margin-bottom: -6px;
+    z-index: -1;
 }
