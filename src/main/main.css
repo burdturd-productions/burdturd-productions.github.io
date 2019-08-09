@@ -9,6 +9,7 @@
     width: 100%;
     padding: 10px;    
     font-family: 'Seymour One', sans-serif;
+    font-size: .75rem;
     box-shadow: 5px 10px 19px -3px rgba(81, 84, 67, 0.7);
 }
 
@@ -42,13 +43,15 @@ nav a {
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
     font-kerning: 2px;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
 }
 
 h1 {
     font-family: 'Seymour One', sans-serif;
-    line-height: 2.5rem;
+    font-size: 1.75rem;
+    line-height: 2.75rem;
 }
 
 .proceed {
@@ -59,7 +62,7 @@ h1 {
     border-color: #f74a3f;
     width: 300px;
     height: 50px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .proceed:hover {

@@ -16,16 +16,21 @@ let losses = 0;
 let draws = 0;
 
 
+let turns = 0;
+
 throwButton.addEventListener('click', () => {
     const computerChoice = getThrow();
     const userChoice = document.querySelector('input:checked').value;
     const gameResult = didPlayerWin(userChoice, computerChoice);
     dice.play();
+    turns++;
     
+    if(turns === 10) {
+        window.location = 'fin.html';
+    }
     result.classList.remove('hidden');
     const src = 'assets/rps/' + computerChoice + '.png';
     result.src = src;
-    
     display(gameResult);
     
 });

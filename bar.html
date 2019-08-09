@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/main/main.css">
+    <link rel="stylesheet" href="src/bar/bar.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Questrial|Seymour+One|Ubuntu|Varela+Round&display=swap" rel="stylesheet">
+    <title>Bar Level</title>
+</head>
+
+<body>
+    <audio autoplay>
+        <source id="clues_audio" src="assets/audio/The_Lounge_-_www.fesliyanstudios.com_-_David_Renda.mp3" type="audio/mp3">
+    </audio>
+    <header class="nav-container">
+        <nav class="nav-bar">
+            <button class="logo-home"> 
+                <a href="index.html"><img class="logo-rev" src="./assets/logo-reverse.png" alt="Pigeon PI Logo Button"></a>   
+            </button>
+            <a class="nav-a" href="char.html">Bio</a>
+            <a class="nav-a" href="clues.html">Clues</a>
+            <a class="nav-a" href="quiz.html">Quiz</a>
+            <a class="nav-a" href="possum.html">Possum</a>
+            <a class="nav-a" href="bar.html">Bar Level</a>
+            <a class="nav=a" href="squirrel.html">Squirrel</a>
+            <a class="nav-a" href="dice.html">Dice Level</a>
+            <a class="nav-a" href="fin.html">Results</a>
+            <a class="nav-a" href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="bar-game">
+            <h1>TRIXIE'S DRINKING GAME</h1>
+            <p>
+                You need to interrogate <strong>Trixie</strong>, Coo Coo Club's top dancer.<br>
+                Trouble is they like their drinks, and won't drink alone.<br>
+                You're going to need to partake to appease them, but beware! <br>
+                Too many and you're out of a job, not enough and you're out.<br><br>
+                So how many shots will you have? Pick an amount between 1-20.<br>
+                You've got 3 tries to find that perfect balance.<br>
+            </p>
+
+            <div>            
+                <h2>CHOOSE WISELY</h2>
+                <p><input id="number-input" type="number" min="1" max="20"/></p>
+                <button class="proceed" id="button"><strong>DRINK UP!</strong></button>
+                <p><span id="result"></span></p>
+            </div>
+        </div>
+
+        <div class="bar-container">
+            <img class="bar-bkgd" src="assets/bar-assets/bar-game.png" alt="Bar Game Image"/>
+        </div>
+    </main>
+    
+    <script src="src/bar/bar.js" type="module"></script>
+
+</body>
+</html>
