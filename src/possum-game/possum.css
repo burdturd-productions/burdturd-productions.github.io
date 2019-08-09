@@ -8,6 +8,7 @@ input {
 
 .radio-image {
     border: 5px solid royalblue;
+    border-radius: 100%;
     
 }
 input:checked + .radio-image {
@@ -19,7 +20,7 @@ body img {
     height: 20%;
 }
 body {
-    background-image: url('../../assets/squirrel-bkgd.png');
+    background-image: url('../../assets/possum-assets/possum-bkgd.png');
     margin-left: 30%;
     margin-right: 30%;
 }

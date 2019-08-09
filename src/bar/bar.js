@@ -3,8 +3,7 @@ import { compareNumbers, getRandomInt } from './compare-numbers.js';
 const guessButton = document.getElementById('button');
 const result = document.getElementById('result');
 const numberInput = document.getElementById('number-input');
-const hiFive = document.getElementById('hi-five'); 
-const youLose = document.getElementById('you-lose');
+
 
 let numberOfGuesses = 3;
 
