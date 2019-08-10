@@ -22,47 +22,44 @@ button:hover {
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin: auto;
 }
 
 form {
     display: flex;
-    width: 80%;
+    width: 100%;
     text-align: center;
 }
 
 .char-img {
-    height: auto;
+    height: 500px;
+    width: auto;
     bottom: 0;
-    width: 30%;
-    max-width: 600px;
-    margin: -10px;
-    margin-top: -20px;
     padding: 0;
     position: fixed;
-    bottom: -10px;
-    z-index: 1;
+    margin-bottom: 70px;
+    margin-left: 30px;
 }
 
 .bubble-left {
     float: left;
     margin-top: 300px;
-    height: 400px;
-    margin-right: -120px;
+    height: 350px;
+    margin-right: -170px;
     width: auto;
 }
 
 .bubble-middle {
     width: auto;
-    height: 450px;
+    height: 400px;
     margin-bottom: -20px;
-    margin-left: 80px;
+    margin-left: 100px;
 }
 
 .bubble-right {
     float: right;
-    margin-top: 300px;
-    margin-left: -100px;
-    height: 500px;
+    margin-top: 250px;
+    margin-left: -180px;
+    height: 450px;
     width: auto;
 }
