@@ -23,7 +23,11 @@ input {
     margin-right: 30%;
     height: auto;
     margin-top: 100px;
-    font-weight: bolder;
+    border-radius: 30px;
+}
+
+.content-game {
+    padding: 50px;
 }
 
 .bar-container {

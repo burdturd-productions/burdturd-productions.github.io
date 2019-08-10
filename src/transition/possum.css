@@ -5,29 +5,42 @@ html {
 }
 
 .possum-story {
-    display: flex;
-    flex-direction: column;
+    height: auto;
+    width: 35%; 
     text-align: center;
-    margin-top: 130px;
-    position: relative;
-    height: 30%;
-    width: 400px;
-    left: 23%;
+    margin-top: 180px;
+    margin-left: 200px;
+}
+
+h1 {
+    line-height: 2rem;
+}
+
+h2 {
+    margin: 10px;
 }
 
 .possum-container {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    z-index: -1;
+    height: auto;
+    width: 80%;
 }
 
 .possum-bkgd {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80%;
     width: auto;
     position: absolute;
-    left: -200px;
     bottom: 0;
+    margin-bottom: 50px;
+    margin-left: 100px;
     z-index: -1;
-    margin-left: 150px;
 }
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+} */

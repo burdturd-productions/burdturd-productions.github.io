@@ -14,7 +14,7 @@
 }
 
 .nav-bar {
-    height: 65px;
+    height: 50px;
     display: flex;
 }
 
@@ -26,7 +26,7 @@ nav a {
     padding: 20px;
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .logo-home {
@@ -35,15 +35,15 @@ nav a {
 }
 
 .logo-rev {
-    height: 60px;
+    height: 50px;
     float: left;
     margin-left: 20px;
     margin-right: -10px;
+    margin-top: -5px;
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.25rem;
     font-kerning: 2px;
     line-height: 1.5rem;
 }
@@ -56,11 +56,11 @@ h1 {
 
 .proceed {
     background-color: #f74a3f;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     font-family: 'Seymour One', sans-serif;
     border-color: #f74a3f;
-    width: 300px;
+    width: 270px;
     height: 50px;
     margin: 10px;
 }

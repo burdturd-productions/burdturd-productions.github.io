@@ -13,7 +13,7 @@ if(userScore === 2) {
 }
 else if(userScore === 1) {
     storyImg.src = '../../assets/lose-two.png';
-    textResult.textContent = 'Something doesn\'t add up, are you sure you solved the case? Maybe you shouldn\'t have had so many drinks with those cats.';
+    textResult.textContent = 'Probably not the wisest decision to drink on the job. With or without the information from Trixie, your boss is alerted of your activities and you find yourself unemployed. The culprits are still out there and reports of eggnappings and abuse of eggcorns are on the rise';
 }
 else if(userScore === 0) {
 

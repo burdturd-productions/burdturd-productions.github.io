@@ -1,8 +1,41 @@
-body {
-    max-height: 460px;
+#main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    text-align: center;
 }
 
-.text {
+.story-image {
+    height: auto;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.result-container {
+    margin-right: -10px;
+    margin-bottom: -10px;
+    height: auto;
+    width: 40%;
+}
+
+.button-container {
+    padding: 20px;
+    margin-right: 100px;
+}
+
+#replay {
+    margin-top: 30px;
+}
+
+.folder {
+    width: 130%;
+}
+
+/* body {
+    max-height: 460px;
+} */
+
+/* .text {
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
@@ -18,7 +51,7 @@ footer {
 footer img {
     margin-bottom: -10px;
     width: 1000px;
-    max-height: 150px;
+    height: auto;
     position: relative;
     bottom: 0;
 }
@@ -37,4 +70,4 @@ footer img {
 .image-container {
     display: flex;
     justify-content: center;
-}
+} */
