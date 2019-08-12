@@ -9,7 +9,7 @@ let userScore = currentUser.score;
 // Need an if statement that Renders results based on score.
 if(userScore === 2) {
     storyImg.src = '../../assets/results-win.png';
-    textResult.textContent = 'Georgie O. Squirrel was right, it WAS Aliens!';
+    textResult.textContent = 'Congratulations, it turns out you made the right decision in seeking out Georgie O. Squirrel. You\'ve captured the guilty party and returned the surviving egglings to their families. "This time he was right...it WAS Aliens!"';
 }
 else if(userScore === 1) {
     storyImg.src = '../../assets/lose-two.png';
@@ -18,5 +18,5 @@ else if(userScore === 1) {
 else if(userScore === 0) {
 
     storyImg.src = '../../assets/lose-one.png';
-    textResult.textContent = 'The possum posie were just caught in the middle. Check your Biases!';
+    textResult.textContent = 'Nice job...The possums tricked you into playing games, meanwhile the culprits are still at large! In the end the Possum Posse are just victims of species profiling and have been falsely accused by you...AGAIN. Check your Biases!';
 }

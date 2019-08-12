@@ -6,10 +6,10 @@ html {
 
 .possum-story {
     height: auto;
-    width: 35%; 
+    width: 25%; 
     text-align: center;
     margin-top: 180px;
-    margin-left: 200px;
+    margin-left: 270px;
 }
 
 h1 {
@@ -36,11 +36,3 @@ h2 {
     margin-left: 100px;
     z-index: -1;
 }
-
-/* main {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-} */

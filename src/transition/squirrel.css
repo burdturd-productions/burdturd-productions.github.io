@@ -54,11 +54,11 @@ h2 {
 .squirrel-bkgd {
     display: flex;
     justify-content: center;
-    height: 80%;
+    height: 85%;
     width: auto;
     position: absolute;
     bottom: 0;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin-bottom: 30px;
+    margin-left: 120px;
     z-index: -1;
 }
