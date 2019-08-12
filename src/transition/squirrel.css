@@ -3,7 +3,7 @@ html {
     background-repeat: repeat;
     background-size: 70%;
 }
-
+/* 
 .squirrel-story {
     display: flex;
     flex-direction: column;
@@ -28,4 +28,37 @@ html {
     bottom: 0;
     z-index: -1;
     margin-left: 150px;
+} */
+
+.squirrel-story {
+    height: auto;
+    width: 35%; 
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 220px;
+}
+
+h1 {
+    line-height: 2rem;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.squirrel-container {
+    height: auto;
+    width: 80%;
+}
+
+.squirrel-bkgd {
+    display: flex;
+    justify-content: center;
+    height: 85%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 120px;
+    z-index: -1;
 }
