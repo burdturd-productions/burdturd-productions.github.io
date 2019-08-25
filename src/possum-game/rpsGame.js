@@ -7,15 +7,11 @@ const message = document.getElementById('message');
 const winCount = document.getElementById('win-count');
 const lossCount = document.getElementById('loss-count');
 const drawCount = document.getElementById('draw-count');
-var possum = new Audio('../../assets/audio/possum_laugh.wav');
-
-
+const possum = new Audio('../../assets/audio/possum_laugh.wav');
 
 let wins = 0;
 let losses = 0;
 let draws = 0;
-
-
 let turns = 0;
 
 throwButton.addEventListener('click', () => {
@@ -32,8 +28,8 @@ throwButton.addEventListener('click', () => {
     const src = 'assets/rps-assets/cpu-' + computerChoice + '.png';
     result.src = src;
     display(gameResult);
-    
 });
+
 function display(result) {
     if(result === true) {
         message.textContent = 'Player Wins!!';
@@ -51,6 +47,7 @@ function display(result) {
         drawCount.textContent = draws;
     }
 }
+
 window.onload = function() {
     document.getElementById('possum_audio').play();
 };

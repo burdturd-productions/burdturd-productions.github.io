@@ -22,10 +22,17 @@ function getDieSide() {
 diceRoll.addEventListener('click', () => {
     event.preventDefault();
     
-    // Get user and computer rolls
-    let alienRoll = getDieSide();
-    let userRoll = getDieSide();
     diceAudio.play();
+    
+    // Get user and computer rolls
+    let alienRoll;
+    let userRoll;        
+    // you can just do this once at beginning,
+    // nice technique!
+    while(userRoll === alienRoll) {
+        alienRoll = getDieSide();
+        userRoll = getDieSide();
+    }
 
     // Compare rolls
     if(userRoll > alienRoll) {
@@ -35,23 +42,6 @@ diceRoll.addEventListener('click', () => {
     else if(userRoll < alienRoll) {
         losses++;
         lossesTally.textContent = losses;
-    }
-    else if(userRoll === alienRoll) {
-        // Reroll dice until sides are different
-
-        while(userRoll === alienRoll) {
-            alienRoll = getDieSide();
-            userRoll = getDieSide();
-        }
-
-        if(userRoll > alienRoll) {
-            wins++;
-            winsTally.textContent = wins;
-        }
-        else if(userRoll < alienRoll) {
-            losses++;
-            lossesTally.textContent = losses;
-        }
     }
 
     // Update display
@@ -69,14 +59,12 @@ diceRoll.addEventListener('click', () => {
     // Check number of rounds 
     if(rounds === 5) {
          // Check if user won or lost
-
         if(wins > losses) {
             window.location = 'fin.html';
-
         }       
         else if(wins < losses) {
+            // goes to same location as win?!?
             window.location = 'fin.html';
-
         }
     }
 });
