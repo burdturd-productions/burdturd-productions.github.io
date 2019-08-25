@@ -10,26 +10,27 @@ const choiceThree = document.getElementById('choice-three');
 // updateScore(username, score)
 // throw user to results page.
 
-choiceOne.addEventListener('click', ()=> {
-    event.preventDefault();
-    let score = 0;
+// use a common function:
+function updateScore(score, location) {
     store.updateScore(score);
-    window.location = 'possum.html';
+    window.location = location;
+}
+
+// event.preventDefault() should be used with form,
+// not button.
+
+choiceOne.addEventListener('click', ()=> {
+    updateScore(0, 'possum.html');
 });
 
 choiceTwo.addEventListener('click', ()=> {
-    event.preventDefault();
-    let score = 1;
-    store.updateScore(score);
-    window.location = 'bar.html';
+    updateScore(1, 'bar.html');
 });
 
 choiceThree.addEventListener('click', ()=> {
-    event.preventDefault();
-    let score = 2;
-    store.updateScore(score);
-    window.location = 'squirrel.html';
+    updateScore(2, 'squirrel.html');
 });
+
 window.onload = function() {
     document.getElementById('quiz_audio').play();
 };
